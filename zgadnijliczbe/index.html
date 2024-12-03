@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Zgadnij liczbe!!!</title>
 </head>
 
@@ -15,7 +16,9 @@
     color: white;
     font-family: monospace;
 }
-
+input{
+    background-color: black;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -123,6 +126,66 @@ ul {
     
     width: 200px !important;
     font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #gameArea {
+        width: 90%;
+        margin: auto;
+        border-width: 2px;
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    #gameTitle {
+        font-size: 30px;
+    }
+
+    #value {
+        width: 100%;
+        font-size: 30px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    #send {
+        width: 100%;
+        font-size: 25px;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    #answer {
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    #answers {
+        font-size: 25px;
+        padding: 10px;
+        line-height: 40px;
+    }
+
+    #podpowiedz {
+        position: absolute;
+        margin: 10px auto;
+        left: 1px;
+        top: -30px !important;
+        height: 50px;
+        width: 50px;
+        
+    }
+    .help2{
+        width: 400px !important;
+        font-size: 20px !important;
+    }
 }
 
 
